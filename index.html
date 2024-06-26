@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<div class="jelly"></div>
+
+
+
+
+
+<body>
+ <nav>
+    <div class="mainnav container flex">
+        <a href="#" class="logo" onclick="reload()">
+            <img src="img/KWIKIE-removebg-preview2.png" alt="logo">
+        </a>
+        <div class="navlink">
+            <ul class="flex">
+                <li class="link1" id="ipl" onclick="onnavitemclick('ipl')">IPL</li>
+                <li class="link1" id="finance" onclick="onnavitemclick('finance')">FINANCE</li>
+                <li class="link1" id="space" onclick="onnavitemclick('space')">SPACE</li>
+                <li class="link1" id="politics" onclick="onnavitemclick('politics')">POLITICS</li>
+                <li class="link1" id="tech" onclick="onnavitemclick('tech')">TECH</li>
+            </ul>
+        </div>
+        <div class="searchbar">
+            <input type="text" class="search" placeholder="e.g space" id="searchresult">
+            <button class="searchbutton" id="searchbutton">Search</button>
+        </div>
+    </div>
+ </nav>
+    
+<main>
+    <div class="cardscontainer container flex" id="maincont">
+ 
+    </div>
+</main>
+<template id="templatenews">
+    <div class="card">
+        <div class="cardheader">
+            <img src="https://via.placeholder.com/400x200" alt="" id="newsimg">
+        </div>
+        <div class="cardcontent">
+            <h3 id="newstitle">This is the news</h3>
+            <h6 id="newssource" class="newssource">ASSAM TRIBUNE 4/09/2023</h6>
+            <p class="newsdes" id="newsdes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nisi rem dolores a repellat. Corrupti expedita esse ullam aliquam ipsa ea quia error!</p>
+        </div>
+    </div> 
+</template>
+    <script src="script.js"></script> 
+</body>
+</html>
